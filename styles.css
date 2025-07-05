@@ -369,18 +369,15 @@ section {
     color: #1e293b;
     margin-bottom: 1rem;
     position: relative;
+    color: #FFD700;
+     
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    border-radius: 2px;
+.section-title:hover {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
 .section-subtitle {
@@ -761,10 +758,10 @@ section {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
     text-align: center;
 }
 
