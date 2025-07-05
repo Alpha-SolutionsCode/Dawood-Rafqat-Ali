@@ -1,4 +1,4 @@
-2// DOM Content Loaded
+// DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
     initNavigation();
@@ -383,6 +383,11 @@ if ('serviceWorker' in navigator) {
                 console.log('ServiceWorker registration failed');
             });
     });
+}
+
+// Resume download functionality
+function downloadResume() {
+    window.open('assets/resume.pdf', '_blank');
 }
 
 // Export functions for testing
